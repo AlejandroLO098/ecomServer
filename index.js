@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.listen(4001, function () {
+app.listen(process.env.PORT || 4001, function () {
   console.log("Running... ");
 });
 
